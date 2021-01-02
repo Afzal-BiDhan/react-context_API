@@ -3,19 +3,17 @@ import { FirstName, LastName } from '../App';
 
 const DemoC = () => {
     return (
-        <>
-            <FirstName.Consumer>{(fname) => {
-                return (
-                    <LastName.Consumer>{(lname) => {
-                        return (
-                            <h1>Hello, {fname} {lname} = Consumer</h1>
-                        )
-                    }}
-                    </LastName.Consumer>
-                )
-            }}
-            </FirstName.Consumer>
-        </>
+        <FirstName.Consumer>{(fname) => {
+            return (
+                <LastName.Consumer>{(lname) => {
+                    return (
+                        <h1>Hello, {fname} {lname} = Consumer</h1>
+                    )
+                }}
+                </LastName.Consumer>
+            )
+        }}
+        </FirstName.Consumer>
     );
 };
 

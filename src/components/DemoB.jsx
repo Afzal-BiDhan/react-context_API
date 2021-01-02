@@ -10,7 +10,7 @@ const DemoB = () => {
     return (
         <>
             <h1>Hello, {fname} {lname} = useContext</h1>
-            <DemoC></DemoC>
+            <DemoC/>
         </>
     );
 };
