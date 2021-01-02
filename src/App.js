@@ -1,5 +1,6 @@
 import React, { createContext } from 'react'
 import DemoA from './components/DemoA';
+import './App.css';
 
 const FirstName = createContext();
 const LastName = createContext();
@@ -7,11 +8,13 @@ const LastName = createContext();
 
 function App() {
   return (
-    <FirstName.Provider value={"Afzal"}>
-      <LastName.Provider value={"Bidhan"} >
-        <DemoA />
-      </LastName.Provider>
-    </FirstName.Provider>
+    <>
+      <FirstName.Provider value={"Afzal"}>
+        <LastName.Provider value={"Bidhan"} >
+          <DemoA />
+        </LastName.Provider>
+      </FirstName.Provider>
+    </>
   );
 }
 
